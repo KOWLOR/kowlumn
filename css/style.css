@@ -1,0 +1,90 @@
+/* Just to make the page like nicer ... */
+body {
+  font: normal .9em/1.45em "Source Sans Pro", Arial;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  background: #F0F0F0;
+  color: #23232c;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+p + p {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+}
+
+hr {
+  border: 0;
+  border-top-width: 1px;
+  border-top-width: 0.0625rem;
+  border-top-style: solid;
+  border-top-color: #f2f2f2;
+  background: transparent;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+h1 small {
+  font-weight: 400;
+}
+
+h2 {
+  color: #676781;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+
+.demo .cnt {
+  background: #6530b2;
+  color: white;
+  border-radius: 0.125rem;
+  padding: 0.25rem 0.375rem;
+  font-family: Menlo, Monaco, Courier, "Courier new", monospace;
+  font-size: .75em;
+}
+.base--16 .demo .cnt {
+  background: #20d08d;
+}
+
+.box {
+  padding: 20px;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: inset 0 -1px 0 #dbdbe3;
+}
+
+code {
+  color: #9d9db1;
+}
+
+.classname {
+  font-family: Menlo, Monaco, Courier, "Courier new", monospace;
+  font-size: .7em;
+  background: rgba(35, 35, 44, 0.035);
+  padding: .05rem .4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
