@@ -1,0 +1,668 @@
+/*--
+  To create a grid pattern define it in the $cols array.
+  Then, call the .base--# class to use it, not only on .container, 
+  but also in a nested .row !
+  Obviously, you can't nest a .container in another one or within a .row, but you create a .row in a .kl-*.
+  That's all !
+--*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  font: normal .9em/1.45em "Source Sans Pro", Arial;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  color: #23232c;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
+.base--10 .kl-1, .row.base--10 .kl-1 {
+  width: 10%;
+}
+
+.base--10 .kl-2, .row.base--10 .kl-2 {
+  width: 20%;
+}
+
+.base--10 .kl-3, .row.base--10 .kl-3 {
+  width: 30%;
+}
+
+.base--10 .kl-4, .row.base--10 .kl-4 {
+  width: 40%;
+}
+
+.base--10 .kl-5, .row.base--10 .kl-5 {
+  width: 50%;
+}
+
+.base--10 .kl-6, .row.base--10 .kl-6 {
+  width: 60%;
+}
+
+.base--10 .kl-7, .row.base--10 .kl-7 {
+  width: 70%;
+}
+
+.base--10 .kl-8, .row.base--10 .kl-8 {
+  width: 80%;
+}
+
+.base--10 .kl-9, .row.base--10 .kl-9 {
+  width: 90%;
+}
+
+.base--10 .kl-10, .row.base--10 .kl-10 {
+  width: 100%;
+}
+
+.base--12 .kl-1, .row.base--12 .kl-1 {
+  width: 8.33333%;
+}
+
+.base--12 .kl-2, .row.base--12 .kl-2 {
+  width: 16.66667%;
+}
+
+.base--12 .kl-3, .row.base--12 .kl-3 {
+  width: 25%;
+}
+
+.base--12 .kl-4, .row.base--12 .kl-4 {
+  width: 33.33333%;
+}
+
+.base--12 .kl-5, .row.base--12 .kl-5 {
+  width: 41.66667%;
+}
+
+.base--12 .kl-6, .row.base--12 .kl-6 {
+  width: 50%;
+}
+
+.base--12 .kl-7, .row.base--12 .kl-7 {
+  width: 58.33333%;
+}
+
+.base--12 .kl-8, .row.base--12 .kl-8 {
+  width: 66.66667%;
+}
+
+.base--12 .kl-9, .row.base--12 .kl-9 {
+  width: 75%;
+}
+
+.base--12 .kl-10, .row.base--12 .kl-10 {
+  width: 83.33333%;
+}
+
+.base--12 .kl-11, .row.base--12 .kl-11 {
+  width: 91.66667%;
+}
+
+.base--12 .kl-12, .row.base--12 .kl-12 {
+  width: 100%;
+}
+
+.base--16 .kl-1, .row.base--16 .kl-1 {
+  width: 6.25%;
+}
+
+.base--16 .kl-2, .row.base--16 .kl-2 {
+  width: 12.5%;
+}
+
+.base--16 .kl-3, .row.base--16 .kl-3 {
+  width: 18.75%;
+}
+
+.base--16 .kl-4, .row.base--16 .kl-4 {
+  width: 25%;
+}
+
+.base--16 .kl-5, .row.base--16 .kl-5 {
+  width: 31.25%;
+}
+
+.base--16 .kl-6, .row.base--16 .kl-6 {
+  width: 37.5%;
+}
+
+.base--16 .kl-7, .row.base--16 .kl-7 {
+  width: 43.75%;
+}
+
+.base--16 .kl-8, .row.base--16 .kl-8 {
+  width: 50%;
+}
+
+.base--16 .kl-9, .row.base--16 .kl-9 {
+  width: 56.25%;
+}
+
+.base--16 .kl-10, .row.base--16 .kl-10 {
+  width: 62.5%;
+}
+
+.base--16 .kl-11, .row.base--16 .kl-11 {
+  width: 68.75%;
+}
+
+.base--16 .kl-12, .row.base--16 .kl-12 {
+  width: 75%;
+}
+
+.base--16 .kl-13, .row.base--16 .kl-13 {
+  width: 81.25%;
+}
+
+.base--16 .kl-14, .row.base--16 .kl-14 {
+  width: 87.5%;
+}
+
+.base--16 .kl-15, .row.base--16 .kl-15 {
+  width: 93.75%;
+}
+
+.base--16 .kl-16, .row.base--16 .kl-16 {
+  width: 100%;
+}
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row .row {
+  margin-left: -7.5px;
+  margin-left: -0.46875rem;
+  margin-right: -7.5px;
+  margin-right: -0.46875rem;
+}
+
+.row + .row, .row .row {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+[class^="kl-"] {
+  background-clip: content-box;
+  float: left;
+  min-height: 1px;
+  min-height: 0.0625rem;
+  padding-left: 7.5px;
+  padding-left: 0.46875rem;
+  padding-right: 7.5px;
+  padding-right: 0.46875rem;
+}
+
+/* -- Media Queries -- */
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .clear-left-smd {
+    clear: left;
+  }
+}
+@media (max-width: 991px) {
+  .mg-top-tb {
+    margin-top: 15px;
+    margin-top: 0.9375rem;
+  }
+
+  .base--10 [class^="kl-"], .row.base--10 [class^="kl-"] {
+    width: 100%;
+  }
+
+  .base--10 .kl-tb-1, .row.base--10 .kl-tb-1 {
+    width: 10%;
+  }
+
+  .base--10 .kl-tb-2, .row.base--10 .kl-tb-2 {
+    width: 20%;
+  }
+
+  .base--10 .kl-tb-3, .row.base--10 .kl-tb-3 {
+    width: 30%;
+  }
+
+  .base--10 .kl-tb-4, .row.base--10 .kl-tb-4 {
+    width: 40%;
+  }
+
+  .base--10 .kl-tb-5, .row.base--10 .kl-tb-5 {
+    width: 50%;
+  }
+
+  .base--10 .kl-tb-6, .row.base--10 .kl-tb-6 {
+    width: 60%;
+  }
+
+  .base--10 .kl-tb-7, .row.base--10 .kl-tb-7 {
+    width: 70%;
+  }
+
+  .base--10 .kl-tb-8, .row.base--10 .kl-tb-8 {
+    width: 80%;
+  }
+
+  .base--10 .kl-tb-9, .row.base--10 .kl-tb-9 {
+    width: 90%;
+  }
+
+  .base--10 .kl-tb-10, .row.base--10 .kl-tb-10 {
+    width: 100%;
+  }
+
+  .base--12 [class^="kl-"], .row.base--12 [class^="kl-"] {
+    width: 100%;
+  }
+
+  .base--12 .kl-tb-1, .row.base--12 .kl-tb-1 {
+    width: 8.33333%;
+  }
+
+  .base--12 .kl-tb-2, .row.base--12 .kl-tb-2 {
+    width: 16.66667%;
+  }
+
+  .base--12 .kl-tb-3, .row.base--12 .kl-tb-3 {
+    width: 25%;
+  }
+
+  .base--12 .kl-tb-4, .row.base--12 .kl-tb-4 {
+    width: 33.33333%;
+  }
+
+  .base--12 .kl-tb-5, .row.base--12 .kl-tb-5 {
+    width: 41.66667%;
+  }
+
+  .base--12 .kl-tb-6, .row.base--12 .kl-tb-6 {
+    width: 50%;
+  }
+
+  .base--12 .kl-tb-7, .row.base--12 .kl-tb-7 {
+    width: 58.33333%;
+  }
+
+  .base--12 .kl-tb-8, .row.base--12 .kl-tb-8 {
+    width: 66.66667%;
+  }
+
+  .base--12 .kl-tb-9, .row.base--12 .kl-tb-9 {
+    width: 75%;
+  }
+
+  .base--12 .kl-tb-10, .row.base--12 .kl-tb-10 {
+    width: 83.33333%;
+  }
+
+  .base--12 .kl-tb-11, .row.base--12 .kl-tb-11 {
+    width: 91.66667%;
+  }
+
+  .base--12 .kl-tb-12, .row.base--12 .kl-tb-12 {
+    width: 100%;
+  }
+
+  .base--16 [class^="kl-"], .row.base--16 [class^="kl-"] {
+    width: 100%;
+  }
+
+  .base--16 .kl-tb-1, .row.base--16 .kl-tb-1 {
+    width: 6.25%;
+  }
+
+  .base--16 .kl-tb-2, .row.base--16 .kl-tb-2 {
+    width: 12.5%;
+  }
+
+  .base--16 .kl-tb-3, .row.base--16 .kl-tb-3 {
+    width: 18.75%;
+  }
+
+  .base--16 .kl-tb-4, .row.base--16 .kl-tb-4 {
+    width: 25%;
+  }
+
+  .base--16 .kl-tb-5, .row.base--16 .kl-tb-5 {
+    width: 31.25%;
+  }
+
+  .base--16 .kl-tb-6, .row.base--16 .kl-tb-6 {
+    width: 37.5%;
+  }
+
+  .base--16 .kl-tb-7, .row.base--16 .kl-tb-7 {
+    width: 43.75%;
+  }
+
+  .base--16 .kl-tb-8, .row.base--16 .kl-tb-8 {
+    width: 50%;
+  }
+
+  .base--16 .kl-tb-9, .row.base--16 .kl-tb-9 {
+    width: 56.25%;
+  }
+
+  .base--16 .kl-tb-10, .row.base--16 .kl-tb-10 {
+    width: 62.5%;
+  }
+
+  .base--16 .kl-tb-11, .row.base--16 .kl-tb-11 {
+    width: 68.75%;
+  }
+
+  .base--16 .kl-tb-12, .row.base--16 .kl-tb-12 {
+    width: 75%;
+  }
+
+  .base--16 .kl-tb-13, .row.base--16 .kl-tb-13 {
+    width: 81.25%;
+  }
+
+  .base--16 .kl-tb-14, .row.base--16 .kl-tb-14 {
+    width: 87.5%;
+  }
+
+  .base--16 .kl-tb-15, .row.base--16 .kl-tb-15 {
+    width: 93.75%;
+  }
+
+  .base--16 .kl-tb-16, .row.base--16 .kl-tb-16 {
+    width: 100%;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .clear-left-tb {
+    clear: left;
+  }
+}
+@media (max-width: 767px) {
+  .base--10 [class^="kl-"], .row.base--10 [class^="kl-"] {
+    width: 100%;
+  }
+
+  .base--10 .kl-ph-1, .row.base--10 .kl-ph-1 {
+    width: 10%;
+  }
+
+  .base--10 .kl-ph-2, .row.base--10 .kl-ph-2 {
+    width: 20%;
+  }
+
+  .base--10 .kl-ph-3, .row.base--10 .kl-ph-3 {
+    width: 30%;
+  }
+
+  .base--10 .kl-ph-4, .row.base--10 .kl-ph-4 {
+    width: 40%;
+  }
+
+  .base--10 .kl-ph-5, .row.base--10 .kl-ph-5 {
+    width: 50%;
+  }
+
+  .base--10 .kl-ph-6, .row.base--10 .kl-ph-6 {
+    width: 60%;
+  }
+
+  .base--10 .kl-ph-7, .row.base--10 .kl-ph-7 {
+    width: 70%;
+  }
+
+  .base--10 .kl-ph-8, .row.base--10 .kl-ph-8 {
+    width: 80%;
+  }
+
+  .base--10 .kl-ph-9, .row.base--10 .kl-ph-9 {
+    width: 90%;
+  }
+
+  .base--10 .kl-ph-10, .row.base--10 .kl-ph-10 {
+    width: 100%;
+  }
+
+  .base--12 [class^="kl-"], .row.base--12 [class^="kl-"] {
+    width: 100%;
+  }
+
+  .base--12 .kl-ph-1, .row.base--12 .kl-ph-1 {
+    width: 8.33333%;
+  }
+
+  .base--12 .kl-ph-2, .row.base--12 .kl-ph-2 {
+    width: 16.66667%;
+  }
+
+  .base--12 .kl-ph-3, .row.base--12 .kl-ph-3 {
+    width: 25%;
+  }
+
+  .base--12 .kl-ph-4, .row.base--12 .kl-ph-4 {
+    width: 33.33333%;
+  }
+
+  .base--12 .kl-ph-5, .row.base--12 .kl-ph-5 {
+    width: 41.66667%;
+  }
+
+  .base--12 .kl-ph-6, .row.base--12 .kl-ph-6 {
+    width: 50%;
+  }
+
+  .base--12 .kl-ph-7, .row.base--12 .kl-ph-7 {
+    width: 58.33333%;
+  }
+
+  .base--12 .kl-ph-8, .row.base--12 .kl-ph-8 {
+    width: 66.66667%;
+  }
+
+  .base--12 .kl-ph-9, .row.base--12 .kl-ph-9 {
+    width: 75%;
+  }
+
+  .base--12 .kl-ph-10, .row.base--12 .kl-ph-10 {
+    width: 83.33333%;
+  }
+
+  .base--12 .kl-ph-11, .row.base--12 .kl-ph-11 {
+    width: 91.66667%;
+  }
+
+  .base--12 .kl-ph-12, .row.base--12 .kl-ph-12 {
+    width: 100%;
+  }
+
+  .base--16 [class^="kl-"], .row.base--16 [class^="kl-"] {
+    width: 100%;
+  }
+
+  .base--16 .kl-ph-1, .row.base--16 .kl-ph-1 {
+    width: 6.25%;
+  }
+
+  .base--16 .kl-ph-2, .row.base--16 .kl-ph-2 {
+    width: 12.5%;
+  }
+
+  .base--16 .kl-ph-3, .row.base--16 .kl-ph-3 {
+    width: 18.75%;
+  }
+
+  .base--16 .kl-ph-4, .row.base--16 .kl-ph-4 {
+    width: 25%;
+  }
+
+  .base--16 .kl-ph-5, .row.base--16 .kl-ph-5 {
+    width: 31.25%;
+  }
+
+  .base--16 .kl-ph-6, .row.base--16 .kl-ph-6 {
+    width: 37.5%;
+  }
+
+  .base--16 .kl-ph-7, .row.base--16 .kl-ph-7 {
+    width: 43.75%;
+  }
+
+  .base--16 .kl-ph-8, .row.base--16 .kl-ph-8 {
+    width: 50%;
+  }
+
+  .base--16 .kl-ph-9, .row.base--16 .kl-ph-9 {
+    width: 56.25%;
+  }
+
+  .base--16 .kl-ph-10, .row.base--16 .kl-ph-10 {
+    width: 62.5%;
+  }
+
+  .base--16 .kl-ph-11, .row.base--16 .kl-ph-11 {
+    width: 68.75%;
+  }
+
+  .base--16 .kl-ph-12, .row.base--16 .kl-ph-12 {
+    width: 75%;
+  }
+
+  .base--16 .kl-ph-13, .row.base--16 .kl-ph-13 {
+    width: 81.25%;
+  }
+
+  .base--16 .kl-ph-14, .row.base--16 .kl-ph-14 {
+    width: 87.5%;
+  }
+
+  .base--16 .kl-ph-15, .row.base--16 .kl-ph-15 {
+    width: 93.75%;
+  }
+
+  .base--16 .kl-ph-16, .row.base--16 .kl-ph-16 {
+    width: 100%;
+  }
+
+  .clear-left-ph {
+    clear: left;
+  }
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+p + p {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+}
+
+hr {
+  border: 0;
+  border-top-width: 1px;
+  border-top-width: 0.0625rem;
+  border-top-style: solid;
+  border-top-color: #f2f2f2;
+  background: transparent;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+h1 small {
+  font-weight: 400;
+}
+
+h2 {
+  color: #676781;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+
+.demo .cnt {
+  background: #6530b2;
+  color: white;
+  border-radius: 0.125rem;
+  padding: 0.25rem 0.375rem;
+  font-family: Menlo, Monaco, Courier, "Courier new", monospace;
+  font-size: .75em;
+}
+.base--16 .demo .cnt {
+  background: #20d08d;
+}
+
+/* .container{
+  &:hover{
+    background:rgba(aquamarine, .3);
+  }
+  .row{
+    &:hover{
+      background:rgba(aquamarine, .5);
+    }
+  }
+} */
+.box {
+  padding: 20px;
+  padding: 1.25rem;
+  background: #eaeaee;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: inset 0 -1px 0 #dbdbe3;
+}
+
+code {
+  color: #9d9db1;
+}
+
+.classname {
+  font-family: Menlo, Monaco, Courier, "Courier new", monospace;
+  font-size: .7em;
+  background: rgba(35, 35, 44, 0.08);
+  padding: .05rem .4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}

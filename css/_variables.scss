@@ -1,0 +1,12 @@
+$cols: 10 12 16;
+$gutter: 15px; 
+$container-width: 1200px;
+
+// Responsive
+$screen-phone: 480px !default;
+$screen-tablet: 768px !default;
+$screen-sm-desktop: 992px !default;
+$screen-lg-desktop: 1200px !default;
+$screen-phone-max: ($screen-tablet - 1) !default;
+$screen-tablet-max: ($screen-sm-desktop - 1) !default;
+$screen-sm-desktop-max: ($screen-lg-desktop - 1) !default;
