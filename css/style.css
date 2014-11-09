@@ -1,10 +1,8 @@
 /* Just to make the page like nicer ... */
 body {
   font: normal .9em/1.45em "Source Sans Pro", Arial;
-  padding-top: 20px;
-  padding-top: 1.25rem;
   background: #F0F0F0;
-  color: #23232c;
+  color: #111111;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -47,7 +45,7 @@ h1 small {
 }
 
 h2 {
-  color: #676781;
+  color: #5e5e5e;
   font-weight: normal;
   line-height: 1.6em;
 }
@@ -70,17 +68,17 @@ h2 {
   background: white;
   border-radius: 6px;
   position: relative;
-  box-shadow: inset 0 -1px 0 #dbdbe3;
+  box-shadow: inset 0 -1px 0 #c9c9c9;
 }
 
 code {
-  color: #9d9db1;
+  color: #919191;
 }
 
 .classname {
   font-family: Menlo, Monaco, Courier, "Courier new", monospace;
   font-size: .7em;
-  background: rgba(35, 35, 44, 0.035);
+  background: rgba(17, 17, 17, 0.035);
   padding: .05rem .4rem;
   position: absolute;
   top: 0;

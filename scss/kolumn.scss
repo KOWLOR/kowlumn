@@ -57,12 +57,11 @@ html{
 }
 
 
-/* -- Media Queries -- */
+/* -- Responsive -- */
 
 //--* Desktop *--//
 @media (max-width: $screen-sm-desktop-max) {
   .container{width:100%}
-  //body{background: salmon}
 }
 @media (min-width: $screen-tablet-max) and (max-width: $screen-sm-desktop-max) {
   //helper (when a .kl-* goes under another due to the float)
@@ -71,16 +70,19 @@ html{
   }
 }
 
+
+
 //--* Tablet *--//
 @media (max-width: $screen-tablet-max) {
-  //body{background:aquamarine}
-
   .mg-top-tb{ 
     @include rem(margin-top, $gutter)
   }
   @each $val in $cols{
-    // Set all to 100% if not overrided from a class from the loop below
-    .base--#{$val} [class^="kl-"], .row.base--#{$val} [class^="kl-"]{width: 100%}
+    // Set all to 100% by default
+    .base--#{$val} [class^="kl-"], .row.base--#{$val} [class^="kl-"]{
+      width: 100%;
+      @include rem(margin-bottom, $gutter);
+    }
 
     // Loop to create the .kl-tb-* class
     @for $i from 1 through $val {
@@ -101,10 +103,12 @@ html{
 
 //--* Mobile *--//
 @media (max-width: $screen-phone-max) {
-  //body{background:yellow}
   @each $val in $cols{
-    // Set all to 100% if not overrided from a class from the loop below
-    .base--#{$val} [class^="kl-"], .row.base--#{$val} [class^="kl-"]{width: 100%}
+    // Set all to 100% by default
+    .base--#{$val} [class^="kl-"], .row.base--#{$val} [class^="kl-"]{
+      width: 100%;
+      @include rem(margin-bottom, $gutter);
+    }
 
     // Loop to create the .kl-ph-* class
     @for $i from 1 through $val {

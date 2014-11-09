@@ -213,7 +213,7 @@ html {
   padding-right: 0.46875rem;
 }
 
-/* -- Media Queries -- */
+/* -- Responsive -- */
 @media (max-width: 1199px) {
   .container {
     width: 100%;
@@ -232,6 +232,8 @@ html {
 
   .base--10 [class^="kl-"], .row.base--10 [class^="kl-"] {
     width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   .base--10 .kl-tb-1, .row.base--10 .kl-tb-1 {
@@ -276,6 +278,8 @@ html {
 
   .base--12 [class^="kl-"], .row.base--12 [class^="kl-"] {
     width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   .base--12 .kl-tb-1, .row.base--12 .kl-tb-1 {
@@ -328,6 +332,8 @@ html {
 
   .base--16 [class^="kl-"], .row.base--16 [class^="kl-"] {
     width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   .base--16 .kl-tb-1, .row.base--16 .kl-tb-1 {
@@ -402,6 +408,8 @@ html {
 @media (max-width: 767px) {
   .base--10 [class^="kl-"], .row.base--10 [class^="kl-"] {
     width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   .base--10 .kl-ph-1, .row.base--10 .kl-ph-1 {
@@ -446,6 +454,8 @@ html {
 
   .base--12 [class^="kl-"], .row.base--12 [class^="kl-"] {
     width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   .base--12 .kl-ph-1, .row.base--12 .kl-ph-1 {
@@ -498,6 +508,8 @@ html {
 
   .base--16 [class^="kl-"], .row.base--16 [class^="kl-"] {
     width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   .base--16 .kl-ph-1, .row.base--16 .kl-ph-1 {

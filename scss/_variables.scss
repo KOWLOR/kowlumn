@@ -1,5 +1,6 @@
 $cols: 10 12 16;
-$gutter: 15px; 
+$gutter: 15px !default;
+
 $container-width: 1200px;
 
 // Responsive
@@ -12,4 +13,5 @@ $screen-tablet-max: ($screen-sm-desktop - 1) !default;
 $screen-sm-desktop-max: ($screen-lg-desktop - 1) !default;
 
 // Demo
-$body-color:#23232C;
+//$body-color:#23232C;
+$body-color:#111;
