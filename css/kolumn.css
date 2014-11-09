@@ -198,8 +198,8 @@ html {
 }
 
 .row + .row, .row .row {
-  margin-top: 10px;
-  margin-top: 0.625rem;
+  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 [class^="kl-"] {
@@ -411,6 +411,9 @@ html {
     margin-bottom: 15px;
     margin-bottom: 0.9375rem;
   }
+  .base--10 [class^="kl-"]:last-child, .row.base--10 [class^="kl-"]:last-child {
+    margin-bottom: 0;
+  }
 
   .base--10 .kl-ph-1, .row.base--10 .kl-ph-1 {
     width: 10%;
@@ -456,6 +459,9 @@ html {
     width: 100%;
     margin-bottom: 15px;
     margin-bottom: 0.9375rem;
+  }
+  .base--12 [class^="kl-"]:last-child, .row.base--12 [class^="kl-"]:last-child {
+    margin-bottom: 0;
   }
 
   .base--12 .kl-ph-1, .row.base--12 .kl-ph-1 {
@@ -510,6 +516,9 @@ html {
     width: 100%;
     margin-bottom: 15px;
     margin-bottom: 0.9375rem;
+  }
+  .base--16 [class^="kl-"]:last-child, .row.base--16 [class^="kl-"]:last-child {
+    margin-bottom: 0;
   }
 
   .base--16 .kl-ph-1, .row.base--16 .kl-ph-1 {

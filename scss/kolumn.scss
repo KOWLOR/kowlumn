@@ -37,7 +37,6 @@ html{
 
 .row{
   @include clearfix();
-  //@include rem(margin-bottom, 10px);
   .row{
     @include rem(margin-left, -$gutter / 2);
     @include rem(margin-right, -$gutter / 2);
@@ -45,7 +44,7 @@ html{
 }
 
 .row + .row, .row .row{
-  @include rem(margin-top, 10px);
+  @include rem(margin-top, $gutter);
 }
 
 [class^="kl-"]{
@@ -108,6 +107,9 @@ html{
     .base--#{$val} [class^="kl-"], .row.base--#{$val} [class^="kl-"]{
       width: 100%;
       @include rem(margin-bottom, $gutter);
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
 
     // Loop to create the .kl-ph-* class
