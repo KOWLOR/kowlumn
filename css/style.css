@@ -1,9 +1,49 @@
 /* Just to make the page like nicer ... */
 body {
-  font: normal .9em/1.45em "Source Sans Pro", Arial;
+  font: normal .9em/1.45em "Helvetica Neue", Helvetica, Arial;
   background: #F0F0F0;
   color: #111111;
   -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: OptimizeLegibility;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.header-main.gradient {
+  background: #672aea;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNjcyYWVhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAyY2NiMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(45deg, #672aea 0%, #02ccb1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #672aea), color-stop(100%, #02ccb1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg, #672aea 0%, #02ccb1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg, #672aea 0%, #02ccb1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg, #672aea 0%, #02ccb1 100%);
+  /* IE10+ */
+  background: linear-gradient(45deg, #672aea 0%, #02ccb1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#672aea', endColorstr='#02ccb1',GradientType=1 );
+  /* IE6-8 fallback on horizontal gradient */
+}
+
+.logo {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+  text-align: center;
+  font-size: 5em;
+  line-height: 1.5em;
+  letter-spacing: -.03em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
 
 .clearfix:before, .clearfix:after {
@@ -50,18 +90,19 @@ h2 {
   line-height: 1.6em;
 }
 
-.demo .cnt {
-  background: #6530b2;
-  color: white;
-  border-radius: 0.125rem;
-  padding: 0.25rem 0.375rem;
-  font-family: Menlo, Monaco, Courier, "Courier new", monospace;
-  font-size: .75em;
-}
-.base--16 .demo .cnt {
-  background: #20d08d;
-}
-
+/* .demo{
+  .cnt{
+    background:$cl-color;
+    color:white;
+    border-radius: 0.125rem;
+    padding:0.25rem 0.375rem;
+    font-family: $font-code;
+    font-size:.75em;
+    .base--16 &{
+      background:$cl-color-2;
+    }
+  }
+} */
 .box {
   padding: 20px;
   padding: 1.25rem;
@@ -85,4 +126,73 @@ code {
   right: 0;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+
+/* Browser */
+.browser {
+  margin: 0 auto;
+  width: 60%;
+  height: 100%;
+}
+.browser .top-bar {
+  background: #E7E7E7;
+  display: table;
+  width: 100%;
+  padding: 10px;
+  padding: 0.625rem;
+  border-top-left-radius: 8px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 8px;
+  border-top-right-radius: 0.5rem;
+}
+.browser .top-bar .action, .browser .top-bar .controls, .browser .top-bar .adress-bar {
+  display: table-cell;
+}
+.browser .top-bar .action ul {
+  font-size: 0;
+  border-spacing: 6px;
+}
+.browser .top-bar .action .btn {
+  border-radius: 100px;
+  border-radius: 6.25rem;
+  background: #cacaca;
+  display: table-cell;
+  height: 14px;
+  height: 0.875rem;
+  width: 14px;
+  width: 0.875rem;
+}
+.browser .top-bar .action .btn:first-child {
+  margin-left: 0px;
+  margin-left: 0rem;
+}
+.browser .top-bar .adress-bar {
+  background: white;
+  height: 14px;
+  height: 0.875rem;
+  border-radius: 4px;
+  border-radius: 0.25rem;
+  width: 80%;
+  text-align: center;
+  font-size: 0.85em;
+  color: #BABABA;
+}
+.browser .browser-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  max-height: 191px;
+  max-height: 11.9375rem;
+}
+.browser .browser-content [class^="kl-"] {
+  background: rgba(255, 255, 255, 0.2);
+  background-clip: content-box;
+}
+
+@media (max-width: 991px) {
+  .browser {
+    width: 80%;
+    overflow: hidden;
+    max-height: 150px;
+    max-height: 9.375rem;
+  }
 }

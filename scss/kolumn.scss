@@ -21,10 +21,14 @@ html{
   -webkit-text-size-adjust: none;
 }
 
+.wrapper{
+  width: $wrap-width;
+  margin: 0 auto;
+}
+
 .container{
   @include clearfix();
   margin: 0 auto;
-  width: $container-width;
 }
 
 @each $val in $cols{
@@ -48,7 +52,7 @@ html{
 }
 
 [class^="kl-"]{
-  background-clip: content-box;
+  //background-clip: content-box;
   float:left;
   @include rem(min-height, 1px);
   @include rem(padding-left, $gutter / 2);
@@ -60,7 +64,7 @@ html{
 
 //--* Desktop *--//
 @media (max-width: $screen-sm-desktop-max) {
-  .container{width:100%}
+  .wrapper{width:100%}
 }
 @media (min-width: $screen-tablet-max) and (max-width: $screen-sm-desktop-max) {
   //helper (when a .kl-* goes under another due to the float)
@@ -100,7 +104,7 @@ html{
 
 
 
-//--* Mobile *--//
+//--* Mobile/Phone *--//
 @media (max-width: $screen-phone-max) {
   @each $val in $cols{
     // Set all to 100% by default

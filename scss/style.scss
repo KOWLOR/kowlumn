@@ -9,11 +9,44 @@ $font-code : Menlo, Monaco, Courier, "Courier new", monospace;
 $box-radius: 6px;
 
 body{
-	font:normal .9em/1.45em "Source Sans Pro", Arial;
+	font:normal .9em/1.45em "Helvetica Neue", Helvetica, Arial;
   //@include rem(padding-top, 20px);
 	background:#F0F0F0;
 	color:$body-color;
-    -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering:OptimizeLegibility;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+.header-main{
+  //@include rem(min-height, 300px);
+  &.gradient{
+    background: #672aea; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNjcyYWVhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAyY2NiMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(45deg,  #672aea 0%, #02ccb1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#672aea), color-stop(100%,#02ccb1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #672aea 0%,#02ccb1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #672aea 0%,#02ccb1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #672aea 0%,#02ccb1 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #672aea 0%,#02ccb1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#672aea', endColorstr='#02ccb1',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+  }
+}
+
+.logo{
+  @include rem(margin-top, 30px);
+  @include rem(margin-bottom, 30px);
+  text-align: center;
+  font-size: 5em;
+  line-height: 1.5em;
+  letter-spacing: -.03em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
 
 .clearfix{
@@ -48,7 +81,7 @@ h2{
   font-weight:normal;
   line-height:1.6em;
 }
-.demo{
+/* .demo{
   .cnt{
     background:$cl-color;
     color:white;
@@ -60,7 +93,7 @@ h2{
       background:$cl-color-2;
     }
   }
-}
+} */
 
 .box{
   @include rem(padding, 20px);
@@ -85,4 +118,65 @@ code{
   border-bottom-left-radius: $box-radius;
 }
 
+/* Browser */
+.browser{
+  margin: 0 auto;
+  width: 60%;
+  height: 100%;
+  .top-bar{
+    background: #E7E7E7;
+    display: table;
+    width: 100%;
+    //@include rem(height, 50px);
+    @include rem(padding, 10px);
+    @include rem(border-top-left-radius, 8px);
+    @include rem(border-top-right-radius, 8px);
+    .action, .controls, .adress-bar{
+      display: table-cell;
+    }
+    .action{
+      ul{
+        font-size: 0;
+        border-spacing: 6px;
+      }
+      .btn{
+        @include rem(border-radius, 100px);
+        background: #cacaca;
+        display: table-cell;
+        @include rem(height, 14px);
+        @include rem(width, 14px);
+        &:first-child{
+          @include rem(margin-left, 0px);
+        }
+      }
+    }
+    .adress-bar{
+      background: white;
+      @include rem(height, 14px);
+      @include rem(border-radius, 4px);
+      width: 80%;
+      text-align: center;
+      font-size: 0.85em;
+      color: #BABABA;
+    }
+  }
+  .browser-content{
+    background:rgba(black, .6);
+    //@include rem(height, 90px);
+    padding: 20px;
+    @include rem(max-height, 191px);
 
+    [class^="kl-"]{
+      background: rgba(white, .2);
+      background-clip: content-box
+    }
+  }
+}
+
+@media (max-width: $screen-tablet-max) {
+  .browser{
+    width: 80%;
+    overflow: hidden;
+    @include rem(max-height, 150px);
+  }
+}

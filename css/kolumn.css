@@ -19,9 +19,13 @@ html {
   -webkit-text-size-adjust: none;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .container {
   margin: 0 auto;
-  width: 1200px;
 }
 .container:before, .container:after {
   content: "";
@@ -119,6 +123,66 @@ html {
   width: 100%;
 }
 
+.base--15 .kl-1, .row.base--15 .kl-1 {
+  width: 6.66667%;
+}
+
+.base--15 .kl-2, .row.base--15 .kl-2 {
+  width: 13.33333%;
+}
+
+.base--15 .kl-3, .row.base--15 .kl-3 {
+  width: 20%;
+}
+
+.base--15 .kl-4, .row.base--15 .kl-4 {
+  width: 26.66667%;
+}
+
+.base--15 .kl-5, .row.base--15 .kl-5 {
+  width: 33.33333%;
+}
+
+.base--15 .kl-6, .row.base--15 .kl-6 {
+  width: 40%;
+}
+
+.base--15 .kl-7, .row.base--15 .kl-7 {
+  width: 46.66667%;
+}
+
+.base--15 .kl-8, .row.base--15 .kl-8 {
+  width: 53.33333%;
+}
+
+.base--15 .kl-9, .row.base--15 .kl-9 {
+  width: 60%;
+}
+
+.base--15 .kl-10, .row.base--15 .kl-10 {
+  width: 66.66667%;
+}
+
+.base--15 .kl-11, .row.base--15 .kl-11 {
+  width: 73.33333%;
+}
+
+.base--15 .kl-12, .row.base--15 .kl-12 {
+  width: 80%;
+}
+
+.base--15 .kl-13, .row.base--15 .kl-13 {
+  width: 86.66667%;
+}
+
+.base--15 .kl-14, .row.base--15 .kl-14 {
+  width: 93.33333%;
+}
+
+.base--15 .kl-15, .row.base--15 .kl-15 {
+  width: 100%;
+}
+
 .base--16 .kl-1, .row.base--16 .kl-1 {
   width: 6.25%;
 }
@@ -203,7 +267,6 @@ html {
 }
 
 [class^="kl-"] {
-  background-clip: content-box;
   float: left;
   min-height: 1px;
   min-height: 0.0625rem;
@@ -215,7 +278,7 @@ html {
 
 /* -- Responsive -- */
 @media (max-width: 1199px) {
-  .container {
+  .wrapper {
     width: 100%;
   }
 }
@@ -327,6 +390,72 @@ html {
   }
 
   .base--12 .kl-tb-12, .row.base--12 .kl-tb-12 {
+    width: 100%;
+  }
+
+  .base--15 [class^="kl-"], .row.base--15 [class^="kl-"] {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
+  }
+
+  .base--15 .kl-tb-1, .row.base--15 .kl-tb-1 {
+    width: 6.66667%;
+  }
+
+  .base--15 .kl-tb-2, .row.base--15 .kl-tb-2 {
+    width: 13.33333%;
+  }
+
+  .base--15 .kl-tb-3, .row.base--15 .kl-tb-3 {
+    width: 20%;
+  }
+
+  .base--15 .kl-tb-4, .row.base--15 .kl-tb-4 {
+    width: 26.66667%;
+  }
+
+  .base--15 .kl-tb-5, .row.base--15 .kl-tb-5 {
+    width: 33.33333%;
+  }
+
+  .base--15 .kl-tb-6, .row.base--15 .kl-tb-6 {
+    width: 40%;
+  }
+
+  .base--15 .kl-tb-7, .row.base--15 .kl-tb-7 {
+    width: 46.66667%;
+  }
+
+  .base--15 .kl-tb-8, .row.base--15 .kl-tb-8 {
+    width: 53.33333%;
+  }
+
+  .base--15 .kl-tb-9, .row.base--15 .kl-tb-9 {
+    width: 60%;
+  }
+
+  .base--15 .kl-tb-10, .row.base--15 .kl-tb-10 {
+    width: 66.66667%;
+  }
+
+  .base--15 .kl-tb-11, .row.base--15 .kl-tb-11 {
+    width: 73.33333%;
+  }
+
+  .base--15 .kl-tb-12, .row.base--15 .kl-tb-12 {
+    width: 80%;
+  }
+
+  .base--15 .kl-tb-13, .row.base--15 .kl-tb-13 {
+    width: 86.66667%;
+  }
+
+  .base--15 .kl-tb-14, .row.base--15 .kl-tb-14 {
+    width: 93.33333%;
+  }
+
+  .base--15 .kl-tb-15, .row.base--15 .kl-tb-15 {
     width: 100%;
   }
 
@@ -509,6 +638,75 @@ html {
   }
 
   .base--12 .kl-ph-12, .row.base--12 .kl-ph-12 {
+    width: 100%;
+  }
+
+  .base--15 [class^="kl-"], .row.base--15 [class^="kl-"] {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
+  }
+  .base--15 [class^="kl-"]:last-child, .row.base--15 [class^="kl-"]:last-child {
+    margin-bottom: 0;
+  }
+
+  .base--15 .kl-ph-1, .row.base--15 .kl-ph-1 {
+    width: 6.66667%;
+  }
+
+  .base--15 .kl-ph-2, .row.base--15 .kl-ph-2 {
+    width: 13.33333%;
+  }
+
+  .base--15 .kl-ph-3, .row.base--15 .kl-ph-3 {
+    width: 20%;
+  }
+
+  .base--15 .kl-ph-4, .row.base--15 .kl-ph-4 {
+    width: 26.66667%;
+  }
+
+  .base--15 .kl-ph-5, .row.base--15 .kl-ph-5 {
+    width: 33.33333%;
+  }
+
+  .base--15 .kl-ph-6, .row.base--15 .kl-ph-6 {
+    width: 40%;
+  }
+
+  .base--15 .kl-ph-7, .row.base--15 .kl-ph-7 {
+    width: 46.66667%;
+  }
+
+  .base--15 .kl-ph-8, .row.base--15 .kl-ph-8 {
+    width: 53.33333%;
+  }
+
+  .base--15 .kl-ph-9, .row.base--15 .kl-ph-9 {
+    width: 60%;
+  }
+
+  .base--15 .kl-ph-10, .row.base--15 .kl-ph-10 {
+    width: 66.66667%;
+  }
+
+  .base--15 .kl-ph-11, .row.base--15 .kl-ph-11 {
+    width: 73.33333%;
+  }
+
+  .base--15 .kl-ph-12, .row.base--15 .kl-ph-12 {
+    width: 80%;
+  }
+
+  .base--15 .kl-ph-13, .row.base--15 .kl-ph-13 {
+    width: 86.66667%;
+  }
+
+  .base--15 .kl-ph-14, .row.base--15 .kl-ph-14 {
+    width: 93.33333%;
+  }
+
+  .base--15 .kl-ph-15, .row.base--15 .kl-ph-15 {
     width: 100%;
   }
 
