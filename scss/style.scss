@@ -180,3 +180,16 @@ code{
     @include rem(max-height, 150px);
   }
 }
+
+@media (max-width: $screen-phone-max) {
+  .logo{
+    font-size: 2em;
+  }
+  .browser{
+    .top-bar{
+      .adress-bar{
+        width:70%;
+      }
+    }
+  }
+}

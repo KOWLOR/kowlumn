@@ -196,3 +196,12 @@ code {
     max-height: 9.375rem;
   }
 }
+@media (max-width: 767px) {
+  .logo {
+    font-size: 2em;
+  }
+
+  .browser .top-bar .adress-bar {
+    width: 70%;
+  }
+}
